@@ -12,6 +12,20 @@
         "product_price": 20.49,
         "product_dateAdded": "2026-04-11",
         "product_ExpirationDate": "2027-02-11"
+    },
+    {
+        "product_name": "Hard Candies",
+        "product_description": "Hard candies are solid, sugar-based sweets that dissolve slowly in the mouth. They often come in the form of individually wrapped pieces or on a stick.",
+        "product_price": 14.99,
+        "product_dateAdded": "2024-02-11",
+        "product_ExpirationDate": "2025-02-11"
+    },
+    {
+        "product_name": "Chewy Candies",
+        "product_description": "Chewy candies have a soft and elastic texture that requires a bit of chewing before they dissolve.",
+        "product_price": 10.89,
+        "product_dateAdded": "2024-09-11",
+        "product_ExpirationDate": "2025-02-11"
     }
     
   ]
