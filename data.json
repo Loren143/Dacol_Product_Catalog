@@ -5,6 +5,13 @@
         "product_price": 65.99,
         "product_dateAdded": "2024-02-11",
         "product_ExpirationDate": "2027-02-11"
+    },
+    {
+        "product_name": "Gummy Candies",
+        "product_description": "Gummy candies are soft, chewy treats typically made from gelatin, sugar, and flavorings. They come in a variety of shapes, such as bears, worms, and fruit slices. ",
+        "product_price": 20.49,
+        "product_dateAdded": "2026-04-11",
+        "product_ExpirationDate": "2027-02-11"
     }
     
   ]
