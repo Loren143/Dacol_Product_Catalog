@@ -1,0 +1,10 @@
+[
+    {
+        "product_name": "Chocolate-based Candies",
+        "product_description": "Chocolate-based candies are made primarily from cocoa solids, cocoa butter, and sugar. They come in various forms, including bars, truffles, and filled chocolates.",
+        "product_price": 65.99,
+        "product_dateAdded": "2024-02-11",
+        "product_ExpirationDate": "2027-02-11"
+    }
+    
+  ]
