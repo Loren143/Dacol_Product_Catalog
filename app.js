@@ -18,7 +18,7 @@ fetch('data.json')
       imageColumn.classList.add("col-md-4");
 
       const image = document.createElement("img");
-      image.src = `product1.jpeg`; // Assumes your images are named product1.jpg, product2.jpg, etc.
+      image.src = `product${index + 1}.jpg`;`product.jpeg`; `product2{index + 1}.webp`;// Assumes your images are named product1.jpg, product2.jpg, etc.
       image.classList.add("img-fluid", "rounded-start");
       image.alt = product.product_name;
 
