@@ -18,7 +18,24 @@ fetch('data.json')
       imageColumn.classList.add("col-md-4");
 
       const image = document.createElement("img");
-      image.src = `product${index + 1}.jpg`;`product.jpeg`; `product2{index + 1}.webp`;// Assumes your images are named product1.jpg, product2.jpg, etc.
+
+      // Check for the existence of each image file separately
+      const jpegImageExists = `product${index + 1}.jpg`;
+      const webpImageExists = `product${index + 1}.webp`;
+      const jpgImageExists = `product${index + 1}.jpeg`;
+
+      // Assign the image source based on availability
+      if (imageExists(jpegImageExists)) {
+        image.src = jpegImageExists;
+      } else if (imageExists(webpImageExists)) {
+        image.src = webpImageExists;
+      } else if (imageExists(jpgImageExists)) {
+        image.src = jpgImageExists;
+      } else {
+        // If none of the images exist, set a placeholder or default image
+        image.src = "placeholder.jpg"; // You can replace "placeholder.jpg" with the path to your default image
+      }
+
       image.classList.add("img-fluid", "rounded-start");
       image.alt = product.product_name;
 
@@ -72,3 +89,10 @@ fetch('data.json')
     });
   })
   .catch(error => console.error('Error fetching data:', error));
+
+function imageExists(url) {
+  var http = new XMLHttpRequest();
+  http.open('HEAD', url, false);
+  http.send();
+  return http.status != 404;
+}
