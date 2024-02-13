@@ -34,9 +34,15 @@
         "product_price": 26.99,
         "product_dateAdded": "2024-02-11",
         "product_ExpirationDate": "2027-02-10"
-    }
+    },
 
-    
+    {
+        "product_name": "Cotton Candy",
+        "product_description": " Fluffy and airy confection made from spun sugar. Available in various colors and flavors, reminiscent of the carnival experience.",
+        "product_price": 23.99,
+        "product_dateAdded": "2024-02-01",
+        "product_ExpirationDate": "2029-02-10"
+    }
     
     
   ]
