@@ -50,5 +50,13 @@
         "product_price": 14.99,
         "product_dateAdded": "2024-02-03",
         "product_ExpirationDate": "2029-02-26"
+    },
+     
+    {
+        "product_name": "Toffee Crunch",
+        "product_description": " Hard and crunchy candies made from caramelized sugar and butter, often mixed with nuts like almonds or pecans for added texture.",
+        "product_price": 10.99,
+        "product_dateAdded": "2024-02-17",
+        "product_ExpirationDate": "2029-09-26"
     }
   ]
