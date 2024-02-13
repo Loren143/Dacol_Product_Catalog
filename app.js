@@ -1,3 +1,5 @@
+let cartCount = 0; // Counter variable for products added to cart
+
 fetch('data.json')
   .then(response => response.json())
   .then(data => {
@@ -45,6 +47,11 @@ fetch('data.json')
       const addToCartButton = document.createElement("button");
       addToCartButton.classList.add("btn", "btn-primary");
       addToCartButton.textContent = "Add to Cart";
+
+      addToCartButton.addEventListener("click", () => {
+        cartCount++; // Increment cart count when button is clicked
+        document.getElementById("cartCount").textContent = `Products in Cart: ${cartCount}`;
+      });
 
       cardBody.appendChild(title);
       cardBody.appendChild(description);
