@@ -26,6 +26,17 @@
         "product_price": 10.89,
         "product_dateAdded": "2024-09-11",
         "product_ExpirationDate": "2025-02-11"
+    },
+
+    {
+        "product_name": "Jelly Beans",
+        "product_description": " Colorful bean-shaped candies with a soft jelly-like center. Come in a wide variety of flavors ranging from fruity to sour.",
+        "product_price": 26.99,
+        "product_dateAdded": "2024-02-11",
+        "product_ExpirationDate": "2027-02-10"
     }
+
+    
+    
     
   ]
