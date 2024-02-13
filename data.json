@@ -42,7 +42,13 @@
         "product_price": 23.99,
         "product_dateAdded": "2024-02-01",
         "product_ExpirationDate": "2029-02-10"
+    },
+     
+    {
+        "product_name": "Sour Patch Kids",
+        "product_description": " Tangy and tart candies shaped like little people. Coated with a sour sugar coating that gives way to a sweet and fruity flavor inside",
+        "product_price": 14.99,
+        "product_dateAdded": "2024-02-03",
+        "product_ExpirationDate": "2029-02-26"
     }
-    
-    
   ]
