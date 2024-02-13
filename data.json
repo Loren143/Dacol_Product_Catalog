@@ -1,13 +1,13 @@
 [
     {
-        "product_name": "Chocolate-based Candies",
-        "product_description": "Chocolate-based candies are made primarily from cocoa solids, cocoa butter, and sugar. They come in various forms, including bars, truffles, and filled chocolates.",
+        "product_name": "Chocolate Truffles",
+        "product_description": " Smooth and creamy chocolate confections with a rich, indulgent taste. Often coated with cocoa powder or nuts for added texture.",
         "product_price": 65.99,
         "product_dateAdded": "2024-02-11",
         "product_ExpirationDate": "2027-02-11"
     },
     {
-        "product_name": "Gummy Candies",
+        "product_name": "Gummys Candie",
         "product_description": "Gummy candies are soft, chewy treats typically made from gelatin, sugar, and flavorings. They come in a variety of shapes, such as bears, worms, and fruit slices. ",
         "product_price": 20.49,
         "product_dateAdded": "2026-04-11",
