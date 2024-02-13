@@ -4,7 +4,7 @@ fetch('data.json')
   .then(response => response.json())
   .then(data => {
     const productListElement = document.getElementById("productlist");
-    data.forEach(product => {
+    data.forEach((product, index) => {
       const cardContainer = document.createElement("div");
       cardContainer.classList.add("col");
 
@@ -18,7 +18,7 @@ fetch('data.json')
       imageColumn.classList.add("col-md-4");
 
       const image = document.createElement("img");
-      image.src = "placeholder.jpg"; // Replace "placeholder.jpg" with your actual image URL
+      image.src = `product1.jpeg`; // Assumes your images are named product1.jpg, product2.jpg, etc.
       image.classList.add("img-fluid", "rounded-start");
       image.alt = product.product_name;
 
