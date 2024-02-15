@@ -5,6 +5,8 @@ function imageExists(url) {
   return http.status != 404;
 }
 
+let cartCounts = {}; // Object to store cart count for each product
+
 function updateCartCount() {
   const cartCountElement = document.getElementById("cartCount");
   let totalCount = 0;
@@ -13,8 +15,6 @@ function updateCartCount() {
   });
   cartCountElement.textContent = `Products in Cart: ${totalCount}`;
 }
-
-let cartCounts = {}; // Object to store cart count for each product
 
 fetch('data.json')
   .then(response => response.json())
@@ -81,12 +81,17 @@ fetch('data.json')
       addToCartButton.classList.add("btn", "btn-primary");
       addToCartButton.textContent = "Add to Cart";
 
+      const productCount = document.createElement("span");
+      productCount.id = `productCount_${index}`;
+      productCount.classList.add("ms-2", "badge", "bg-secondary");
+
       addToCartButton.addEventListener("click", () => {
         // Increment cart count for the product
         if (!cartCounts[product.product_name]) {
           cartCounts[product.product_name] = 0;
         }
         cartCounts[product.product_name]++;
+        productCount.textContent = cartCounts[product.product_name];
         updateCartCount();
       });
 
@@ -95,6 +100,7 @@ fetch('data.json')
       cardBody.appendChild(price);
       cardBody.appendChild(dates);
       cardBody.appendChild(addToCartButton);
+      cardBody.appendChild(productCount);
 
       imageColumn.appendChild(image);
       contentColumn.appendChild(cardBody);
